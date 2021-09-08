@@ -1,0 +1,1 @@
+from .cppjudge import CPlusPlusJudgeXBlock

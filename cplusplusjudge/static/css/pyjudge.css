@@ -1,0 +1,109 @@
+.initial_code, .student_code {
+    height: 200px;
+    border: 1px solid lightgray;
+    margin: auto;
+}
+
+.student_code {
+    width: 100%;
+}
+
+.initial_code {
+    width: 80%;
+}
+
+.action {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.code-runner {
+    margin: 0;
+    background-color: #eee;
+    color: #5e5e5e;
+    padding: .5em;
+    border: 2px solid #ccc;
+}
+
+.code-runner-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.code-runner-input {
+    height: 60px;
+    background-color: white;
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box;
+    margin-top:1px;
+}
+
+.code-runner-button {
+    margin-left: .5em;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-runner-output {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.code-feedback {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(82, 82, 82, 1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(82, 82, 82, 1);
+    box-shadow: 0px 0px 3px 1px rgba(82, 82, 82, 1);
+}
+
+.student-code-modal {
+    position: fixed;
+    z-index: 100;
+    display: none;
+    width: 80%;
+    overflow: hidden;
+
+    left: 10% !important; /* important is necessary to override modal JS styling */
+    margin-left: 0px !important; /* important is necessary to override modal JS styling */
+    bottom: 20px;
+}
+
+.student-code-modal .inner-wrapper {
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.submissions-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.model_answer_button {
+    border: 1px solid #0075b4;
+}
+
+.feedback_title {
+    margin-bottom: 10px;
+}
+
+.error_window {
+    padding-left: 10px;
+    border-left: 4px solid darkred !important;
+}
+
+.error_tip {
+    margin-bottom: 0 !important;
+}

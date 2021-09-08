@@ -1,0 +1,35 @@
+<div class="wrapper-comp-settings is-active editor-with-buttons" >
+    <ul class="list-input   ">
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting"><label class="label setting-label" for="initial_code_{{xblock_id}}">Initial code</label>
+                <div id="initial_code_{{xblock_id}}">{{initial_code}}</div>
+            </div>
+            <span class="tip setting-help">O código inicial para este problema</span>
+        </li>
+        {% if not no_submission %}
+        <li class="field comp-setting-entry is-set">
+            <div class="wrapper-comp-setting"><label class="label setting-label" for="model_answer_{{xblock_id}}">Model answer</label>
+                <div id="model_answer_{{xblock_id}}">{{model_answer}}</div>
+            </div>
+            <span class="tip setting-help">Solução modelo para este problema</span>
+            <div class="code-feedback" id="code-feedback_{{xblock_id}}">Clica em "Guardar e testar" para avaliar.</div>
+        </li>
+        {% endif %}
+    </ul>
+    <div class="xblock-actions pyjudge-actions">
+        <ul class="action">
+            <li class="action-item">
+                <button id="save-button_{{xblock_id}}" class="submit btn-brand" type="button">
+                    <span class="submit-label">Guardar</span>
+                </button>
+            </li>
+            {% if not no_submission %}
+            <li class="action-item">
+                <button id="test_model_answer_{{xblock_id}}" class="submit btn-brand" type="button">
+                    <span class="submit-label">Guardar e Testar solução modelo</span>
+                </button>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
